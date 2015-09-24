@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://hluguoj.github.io/"/>
-  <updated>2015-09-23T17:18:38.000Z</updated>
+  <updated>2015-09-24T09:38:50.000Z</updated>
   <id>http://hluguoj.github.io/</id>
   
   <author>
@@ -19,12 +19,10 @@
     <link href="http://hluguoj.github.io/2015/09/24/%E6%90%AD%E5%BB%BAhexo/"/>
     <id>http://hluguoj.github.io/2015/09/24/搭建hexo/</id>
     <published>2015-09-23T17:17:32.000Z</published>
-    <updated>2015-09-23T17:18:38.000Z</updated>
-    <content type="html"><![CDATA[<p>＃安装node.js</p>
-]]></content>
+    <updated>2015-09-24T09:38:50.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="安装node-js">安装node.js</h1>]]></content>
     <summary type="html">
-    <![CDATA[<p>＃安装node.js</p>
-]]>
+    <![CDATA[<h1 id="安装node-js">安装node.js</h1>]]>
     </summary>
     
   </entry>
