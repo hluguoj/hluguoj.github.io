@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[路过]]></title>
-  <subtitle><![CDATA[走过路过，不要错过]]></subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   <link href="http://hluguoj.github.io/"/>
-  <updated>2015-09-16T04:54:36.000Z</updated>
+  <updated>2016-02-17T16:25:41.000Z</updated>
   <id>http://hluguoj.github.io/</id>
   
   <author>
@@ -15,28 +15,111 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[hello-hexo]]></title>
-    <link href="http://hluguoj.github.io/2015/09/16/hello-hexo/"/>
-    <id>http://hluguoj.github.io/2015/09/16/hello-hexo/</id>
-    <published>2015-09-16T04:53:01.000Z</published>
-    <updated>2015-09-16T04:54:36.000Z</updated>
-    <content type="html"><![CDATA[<p>hello world</p>
+    <title><![CDATA[Markdown 语法学习]]></title>
+    <link href="http://hluguoj.github.io/2015/09/24/%E6%90%AD%E5%BB%BAhexo/"/>
+    <id>http://hluguoj.github.io/2015/09/24/搭建hexo/</id>
+    <published>2015-09-23T17:17:32.000Z</published>
+    <updated>2016-02-17T16:25:41.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="什么是Markdown">什么是Markdown</h2><p>Markdown是一种轻量级的标记语言，它的理念是：能让文档更容易读、写和随意改。语法简单，常用的标记也就8种，让我们在编写的时候从排版中脱离出来，可以更加关注书写的内容而不是格式。<br><a id="more"></a></p>
+<h2 id="标题">标题</h2><p>我们写每一篇文章，都少不了标题。表示标题，我们在前面添加<code>#</code>就好，标题经常会有多级，我们使用多个 <code>#</code> ，一个代表一级标题，两个代表二级，以此类推。最多6级</p>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># 一级标题</span></span><br><span class="line"><span class="preprocessor">## 二级标题</span></span><br><span class="line"><span class="preprocessor">### 三级标题</span></span><br><span class="line"><span class="preprocessor">#### 四级标题</span></span><br><span class="line"><span class="preprocessor">##### 五级标题</span></span><br><span class="line"><span class="preprocessor">###### 六级标题</span></span><br></pre></td></tr></table></figure>
+<h2 id="列表">列表</h2><p>用 <code>*</code> 或 <code>-</code> 或 <code>+</code> 在前面代表无序，后面要有一个空格</p>
+<p>用数字加一个英文点 <code>1.</code>，代表有序，前面的数字可以不按顺序，但是为了美观，还是希望大家按顺序写</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">* </span>Python</span><br><span class="line"><span class="bullet">* </span>Java</span><br><span class="line"><span class="bullet">* </span>Ruby</span><br><span class="line"></span><br><span class="line"><span class="bullet">- </span>Python</span><br><span class="line"><span class="bullet">- </span>Java</span><br><span class="line"><span class="bullet">- </span>Ruby</span><br><span class="line"></span><br><span class="line"><span class="bullet">+ </span>Python</span><br><span class="line"><span class="bullet">+ </span>Java</span><br><span class="line"><span class="bullet">+ </span>Ruby</span><br><span class="line"></span><br><span class="line"><span class="bullet">1. </span>1</span><br><span class="line"><span class="bullet">2. </span>2</span><br><span class="line"><span class="bullet">3. </span>3</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<ul>
+<li>Python</li>
+<li>Java</li>
+<li>Ruby</li>
+</ul>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ol>
+<h2 id="引用">引用</h2><p>在前面加一个  <code>&gt;</code>，如果希望换行，就可以在一行后面加两个空格</p>
+<blockquote>
+<p>我思故我在<br>I think,therefore I am</p>
+</blockquote>
+<h2 id="图片和链接">图片和链接</h2><p>图片和链接的差别是前面有没有 <code>!</code><br>markdown有两种链接方式，行内链接和引用链接</p>
+<ul>
+<li>行内链接 格式为 <code>[name](url &quot;Title&quot;)</code></li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="link_label">百度一下</span>](<span class="link_url">http://www.baidu.com "baidu"</span>)</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><a href="http://www.baidu.com" title="baidu" target="_blank" rel="external">百度一下</a></p>
+<ul>
+<li>引用链接 格式为 <code>[name][id]</code></li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="link_label">baidu</span>][<span class="link_reference">baidu</span>]</span><br><span class="line">\[baidu\]: www.baidu.com "百度一下"</span><br></pre></td></tr></table></figure>
+<p>上面第二行是一个引用，前面部分是id，用于对应第一行的id。如果第一行的id是空，默认使用中括号里面的name作为引用id</p>
+<p><a href="www.baidu.com" title="百度一下">baidu</a></p>
+<h2 id="粗体和斜体">粗体和斜体</h2><p>用两个 <code>*</code> 或 <code>_</code> 括住是粗体，一个 <code>*</code> 或 <code>_</code> 括住是斜体，不能有空格</p>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">*</span><span class="keyword">*</span>加粗<span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="keyword">*</span>斜体<span class="keyword">*</span></span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><strong>加粗</strong></p>
+<p><em>斜体</em></p>
+<h2 id="脚注">脚注</h2><p>格式如下：</p>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hello<span class="string">[^hello]</span></span><br><span class="line">\<span class="string">[^hello\]</span>: hi</span><br></pre></td></tr></table></figure>
+<p>这部分的引用跟链接中的引用只是多了一个<code>^</code>，用于表示是在右上角</p>
+<p>a<a href="a">^a</a></p>
+<h2 id="表格">表格</h2><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string">head1</span>|<span class="string">head2</span>|<span class="string">head3</span>|<span class="string">head4</span>|</span><br><span class="line">|<span class="string">---</span>|<span class="string">:---</span>|<span class="string">:---:</span>|<span class="string">---:</span>|</span><br><span class="line">|<span class="string">row1text1</span>|<span class="string">row1text3</span>|<span class="string">row1text3</span>|<span class="string">row1text4</span>|</span><br><span class="line">|<span class="string">row2text1</span>|<span class="string">row2text3</span>|<span class="string">row2text3</span>|<span class="string">row2text4</span>|</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<table>
+<thead>
+<tr>
+<th>head1</th>
+<th style="text-align:left">head2</th>
+<th style="text-align:center">head3</th>
+<th style="text-align:right">head4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>row1text1</td>
+<td style="text-align:left">row1text3</td>
+<td style="text-align:center">row1text3</td>
+<td style="text-align:right">row1text4</td>
+</tr>
+<tr>
+<td>row2text1</td>
+<td style="text-align:left">row2text3</td>
+<td style="text-align:center">row2text3</td>
+<td style="text-align:right">row2text4</td>
+</tr>
+</tbody>
+</table>
+<p><code>:</code> 所在地方是指表格那一列对齐的位置</p>
+<h2 id="代码框">代码框</h2><p>用两个反撇号括住就引用代码框。</p>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="escape">`p</span>rint <span class="number">1</span>`</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><code>print 1</code></p>
+<p>但这种支持单行代码，多行就不行了，为了支持多行，我们可以有以下两种方式</p>
+<ol>
+<li>统一在前面空4个空格</li>
+<li>前后用3个反撇号括住，添加代码语言</li>
+</ol>
+<p>如下：</p>
+<pre><code><span class="comment"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">print</span> time.time()</span><br></pre></td></tr></table></figure></span>
+</code></pre><h2 id="分割线">分割线</h2><p>用三个或以上的 <code>*</code> 或 <code>-</code> 或 <code>_</code> 占一行即可</p>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="header">***</span><br><span class="line">---</span></span><br><span class="line">__<span class="emphasis">_</span></span><br></pre></td></tr></table></figure>
+<h2 id="注意">注意</h2><p>markdown支持使用html代码，直接在markdown内容里面加入html代码就可以解析，但是在html代码里面就不能解析markdown代码</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>hello world</p>
-]]>
+    <![CDATA[<h2 id="什么是Markdown">什么是Markdown</h2><p>Markdown是一种轻量级的标记语言，它的理念是：能让文档更容易读、写和随意改。语法简单，常用的标记也就8种，让我们在编写的时候从排版中脱离出来，可以更加关注书写的内容而不是格式。<br>]]>
+    
     </summary>
     
-      <category term="hello hexo" scheme="http://hluguoj.github.io/tags/hello-hexo/"/>
+      <category term="markdown" scheme="http://hluguoj.github.io/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://hluguoj.github.io/2015/09/16/hello-world/"/>
-    <id>http://hluguoj.github.io/2015/09/16/hello-world/</id>
-    <published>2015-09-15T16:45:54.000Z</published>
-    <updated>2015-09-15T16:45:54.000Z</updated>
+    <link href="http://hluguoj.github.io/2015/09/24/hello-world/"/>
+    <id>http://hluguoj.github.io/2015/09/24/hello-world/</id>
+    <published>2015-09-23T16:02:23.000Z</published>
+    <updated>2015-09-23T16:02:23.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
